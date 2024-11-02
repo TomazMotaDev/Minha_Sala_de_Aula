@@ -3,6 +3,8 @@
 
 Minha Sala de Aula é meu projeto de conclusão do curso Técnico em Desenvolvimento de Sistemas pelo SENAC na modalidade EAD. Durante muito tempo em dei aula particular de violão e passei por diversas experiências atuando desta forma. Neste momento em que estou passando por uma transição de carreira, decidi fazer como meu projeto de curso algo que se relaciona com minha vivência. Então muito do que está presente aqui é baseado nas minhas "dores" enquanto professor particular e no que pude obter de conversas com amigos meus que também atuam desta forma.
 
+![Imagem principal da aplicação mostrando o calendário com as aulas cadastradas e as demais abas com demais funcionalidades](https://github.com/TomazMotaDev/Minha_Sala_de_Aula/blob/main/Docs/Imagem%20do%20sistema%20-%20241102.png)
+
 É um projeto ainda em desenvolvimento mas que a cada dia cresce. Segue o projeto que fiz sobre toda a aplicação.
 
 # O Projeto
