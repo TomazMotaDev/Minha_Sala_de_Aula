@@ -1,0 +1,58 @@
+Telas
+
+FormPagamento - OK
+GuiPlanejamento - OK
+
+Gui_Principal (Calendario)
+- Selecionar uma data do calendario
+- A partir da data selecionada mostrar as aulas do dia
+- adicionar uma nova aula no dia selecionado
+- editar a aula
+- ver o planejamento
+- copiar o endereço
+- copiar o link da aula
+- marcar como aula feita
+
+Gui_Principal (Professor) OKOK
+- mostrar os dados cadastrados do professor OK
+- mostrar as formações cadastradas OK
+- cadastrar uma nova formação OK
+- editar uma formação cadastrada OK
+- excluir uma formação cadastrada OK
+- mostrar pacotes cadastradas OK
+- cadastrar um novo pacote OK
+- editar um pacote cadastrado OK
+- excluir um pacote cadastrado OK
+
+Gui_Principal (Turmas)
+- cadastrar nova turma
+- editar uma turma cadastrada
+- cadastrar aluno novo
+- editar alunos
+- mostrar alunos
+- excluir alunos
+- cadastrar aulas
+- editar aulas
+- excluir aulas
+- cadastrar pagamento
+- excluir pagamento
+ 
+
+Gui_Principal (Finanças)
+- Acho que vai ficar para a próxima rsrsrsrs.
+
+GuiAlunos - OK
+GuiConfiguracoes - OK
+FormTurma - OK
+FormProfessor - OK
+FormPacoteDeAula - OK
+FormFormacao - OK
+FormAula - OK
+FormAluno - OK
+FormPlanejamento - OK
+
+Conexão JPA
+
+Instance.xml
+
+ClassesJPA
