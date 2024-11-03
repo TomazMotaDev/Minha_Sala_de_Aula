@@ -4,6 +4,9 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.ManyToOne;
+import jakarta.persistence.OneToOne;
 
 @Entity
 public class Endereco{
@@ -12,11 +15,16 @@ public class Endereco{
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
     
+    @OneToOne(mappedBy="endereco")
+    @JoinColumn(name="id_turma", referencedColumnName="id")
+    private Turma turma;
+    
     private String rua;
     private String numero;
     private String complemento;
     private String bairro;
     private String cidade;
+    private String atividade;
     
     //GETTERS AND SETTERS
     public String getRua() {
@@ -66,5 +74,12 @@ public class Endereco{
     public void setId(int id) {
         this.id = id;
     }
-    
+
+    public String getAtividade() {
+        return atividade;
+    }
+
+    public void setAtividade(String atividade) {
+        this.atividade = atividade;
+    }
 }

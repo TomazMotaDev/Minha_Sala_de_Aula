@@ -41,7 +41,7 @@ public class GuiPlanejamento extends javax.swing.JFrame {
         lbMetoTexto = new javax.swing.JLabel();
         scrlpnRecursos = new javax.swing.JScrollPane();
         lbRecTexto = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
+        btConfirmar = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setBounds(new java.awt.Rectangle(0, 0, 561, 554));
@@ -88,13 +88,13 @@ public class GuiPlanejamento extends javax.swing.JFrame {
         lbRecTexto.setVerticalAlignment(javax.swing.SwingConstants.TOP);
         scrlpnRecursos.setViewportView(lbRecTexto);
 
-        jButton1.setIcon(new javax.swing.ImageIcon("/run/media/tomazaudio/ed644f64-c403-47df-b53b-4b1c2e37f556/SENAC/Projetos Java/Minha_Sala_de_Aula/src/resources/icon/Botao_Confirmar.png")); // NOI18N
-        jButton1.setBorderPainted(false);
-        jButton1.setContentAreaFilled(false);
-        jButton1.setPressedIcon(new javax.swing.ImageIcon("/run/media/tomazaudio/ed644f64-c403-47df-b53b-4b1c2e37f556/SENAC/Projetos Java/Minha_Sala_de_Aula/src/resources/icon/Botao_Confirmar_Pressed.png")); // NOI18N
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        btConfirmar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/Botao_Confirmar.png"))); // NOI18N
+        btConfirmar.setBorderPainted(false);
+        btConfirmar.setContentAreaFilled(false);
+        btConfirmar.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/Botao_Confirmar_Pressed.png"))); // NOI18N
+        btConfirmar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                btConfirmarActionPerformed(evt);
             }
         });
 
@@ -105,7 +105,7 @@ public class GuiPlanejamento extends javax.swing.JFrame {
             .addGroup(panelFolhas1Layout.createSequentialGroup()
                 .addGap(25, 25, 25)
                 .addGroup(panelFolhas1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jButton1)
+                    .addComponent(btConfirmar)
                     .addGroup(panelFolhas1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                         .addComponent(scrpnObjetivo)
                         .addComponent(scrlpnConteudo)
@@ -144,8 +144,8 @@ public class GuiPlanejamento extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(scrlpnRecursos, javax.swing.GroupLayout.PREFERRED_SIZE, 78, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jButton1)
-                .addContainerGap(26, Short.MAX_VALUE))
+                .addComponent(btConfirmar)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout panelDegradeAzul1Layout = new javax.swing.GroupLayout(panelDegradeAzul1);
@@ -179,9 +179,9 @@ public class GuiPlanejamento extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void btConfirmarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btConfirmarActionPerformed
         dispose();
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_btConfirmarActionPerformed
 
     /**
      * @param args the command line arguments
@@ -219,7 +219,7 @@ public class GuiPlanejamento extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
+    private javax.swing.JButton btConfirmar;
     private javax.swing.JLabel lbContTexto;
     private javax.swing.JLabel lbConteudos;
     private javax.swing.JLabel lbMetoTexto;

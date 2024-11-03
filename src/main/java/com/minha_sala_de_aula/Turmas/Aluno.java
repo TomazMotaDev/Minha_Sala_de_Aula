@@ -59,5 +59,12 @@ public class Aluno{
     public void setId(int id) {
         this.id = id;
     }
-    
+
+    public String getAtividade() {
+        return atividade;
+    }
+
+    public void setAtividade(String atividade) {
+        this.atividade = atividade;
+    }
 }

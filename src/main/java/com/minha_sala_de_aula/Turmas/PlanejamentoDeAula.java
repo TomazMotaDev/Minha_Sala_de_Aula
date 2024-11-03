@@ -4,6 +4,8 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.OneToOne;
 
 @Entity
 public class PlanejamentoDeAula{
@@ -11,6 +13,10 @@ public class PlanejamentoDeAula{
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
+    
+    @OneToOne(mappedBy="planejamento")
+    @JoinColumn(name="id_aula", referencedColumnName="id")
+    private Aula aula;
     
     private String objetivo;
     private String conteudo;
@@ -62,5 +68,12 @@ public class PlanejamentoDeAula{
     public void setId(int id) {
         this.id = id;
     }
-    
+
+    public String getAtividade() {
+        return atividade;
+    }
+
+    public void setAtividade(String atividade) {
+        this.atividade = atividade;
+    }
 }

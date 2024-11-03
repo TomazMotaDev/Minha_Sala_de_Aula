@@ -41,8 +41,8 @@ public class FormPlanejamento extends javax.swing.JFrame {
         scrlpnRecursos = new javax.swing.JScrollPane();
         taRecursos = new javax.swing.JTextArea();
         lbPlanejamento = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
+        btCancelar = new javax.swing.JButton();
+        btConfirmar = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
@@ -86,15 +86,20 @@ public class FormPlanejamento extends javax.swing.JFrame {
         lbPlanejamento.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lbPlanejamento.setText("Planejamento de Aula");
 
-        jButton1.setIcon(new javax.swing.ImageIcon("/run/media/tomazaudio/ed644f64-c403-47df-b53b-4b1c2e37f556/SENAC/Projetos Java/Minha_Sala_de_Aula/src/resources/icon/Botao_Cancelar.png")); // NOI18N
-        jButton1.setBorderPainted(false);
-        jButton1.setContentAreaFilled(false);
-        jButton1.setPressedIcon(new javax.swing.ImageIcon("/run/media/tomazaudio/ed644f64-c403-47df-b53b-4b1c2e37f556/SENAC/Projetos Java/Minha_Sala_de_Aula/src/resources/icon/Botao_Cancelar_Pressed.png")); // NOI18N
+        btCancelar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/Botao_Cancelar.png"))); // NOI18N
+        btCancelar.setBorderPainted(false);
+        btCancelar.setContentAreaFilled(false);
+        btCancelar.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/Botao_Cancelar_Pressed.png"))); // NOI18N
+        btCancelar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btCancelarActionPerformed(evt);
+            }
+        });
 
-        jButton2.setIcon(new javax.swing.ImageIcon("/run/media/tomazaudio/ed644f64-c403-47df-b53b-4b1c2e37f556/SENAC/Projetos Java/Minha_Sala_de_Aula/src/resources/icon/Botao_Confirmar.png")); // NOI18N
-        jButton2.setBorderPainted(false);
-        jButton2.setContentAreaFilled(false);
-        jButton2.setPressedIcon(new javax.swing.ImageIcon("/run/media/tomazaudio/ed644f64-c403-47df-b53b-4b1c2e37f556/SENAC/Projetos Java/Minha_Sala_de_Aula/src/resources/icon/Botao_Confirmar_Pressed.png")); // NOI18N
+        btConfirmar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/Botao_Confirmar.png"))); // NOI18N
+        btConfirmar.setBorderPainted(false);
+        btConfirmar.setContentAreaFilled(false);
+        btConfirmar.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/Botao_Confirmar_Pressed.png"))); // NOI18N
 
         javax.swing.GroupLayout panelFolhas1Layout = new javax.swing.GroupLayout(panelFolhas1);
         panelFolhas1.setLayout(panelFolhas1Layout);
@@ -105,9 +110,9 @@ public class FormPlanejamento extends javax.swing.JFrame {
                 .addGroup(panelFolhas1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                     .addGroup(panelFolhas1Layout.createSequentialGroup()
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jButton1)
+                        .addComponent(btCancelar)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jButton2))
+                        .addComponent(btConfirmar))
                     .addGroup(javax.swing.GroupLayout.Alignment.LEADING, panelFolhas1Layout.createSequentialGroup()
                         .addGap(25, 25, 25)
                         .addGroup(panelFolhas1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
@@ -147,9 +152,9 @@ public class FormPlanejamento extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(scrlpnRecursos, javax.swing.GroupLayout.PREFERRED_SIZE, 78, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
-                        .addComponent(jButton2))
-                    .addComponent(jButton1))
-                .addContainerGap(37, Short.MAX_VALUE))
+                        .addComponent(btConfirmar))
+                    .addComponent(btCancelar))
+                .addContainerGap(8, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout panelDegradeAzul1Layout = new javax.swing.GroupLayout(panelDegradeAzul1);
@@ -182,6 +187,10 @@ public class FormPlanejamento extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btCancelarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btCancelarActionPerformed
+        dispose();
+    }//GEN-LAST:event_btCancelarActionPerformed
 
     /**
      * @param args the command line arguments
@@ -219,8 +228,8 @@ public class FormPlanejamento extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
+    private javax.swing.JButton btCancelar;
+    private javax.swing.JButton btConfirmar;
     private javax.swing.JLabel lbConteudos;
     private javax.swing.JLabel lbMetodologia;
     private javax.swing.JLabel lbObjetivos;

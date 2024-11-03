@@ -2,13 +2,17 @@ package com.minha_sala_de_aula.Turmas;
 
 import jakarta.persistence.CascadeType;
 import jakarta.persistence.Entity;
+import jakarta.persistence.FetchType;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
 import jakarta.persistence.OneToOne;
+import jakarta.persistence.OrderBy;
 import jakarta.persistence.PrimaryKeyJoinColumn;
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 public class Aula{
@@ -30,12 +34,9 @@ public class Aula{
     public Aula(){
         atividade = "ativo";
     }
-    
-    @OneToOne(cascade = CascadeType.MERGE)
-    @PrimaryKeyJoinColumn
+    @OneToOne(cascade = CascadeType.ALL)
     private PlanejamentoDeAula planejamento;
-    
-    
+        
     //GETTERS AND SETTERS
     public String getNome(){
         return nome;
@@ -84,5 +85,12 @@ public class Aula{
     public void setId(int id) {
         this.id = id;
     }
-      
+
+    public String getAtividade() {
+        return atividade;
+    }
+
+    public void setAtividade(String atividade) {
+        this.atividade = atividade;
+    }      
 }
